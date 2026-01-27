@@ -33,7 +33,6 @@ class Boggle:
             tile = self.grid[r][c].upper()
             current_word += tile
             
-            # FIXED: Only add word if it's in the dictionary AND length >= 3
             if len(current_word) >= 3 and current_word in self.dictionary:
                 found_words.add(current_word.lower())
 
